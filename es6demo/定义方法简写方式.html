@@ -1,0 +1,32 @@
+<script>
+    //传统方式定义的方法
+    const person = {
+        sayHi : function(){
+            console.log("Hi")
+        }
+    }
+    //传统方式定义的方法
+    const person2 = {
+        sayHi(){
+            console.log("Hi")
+        }
+    }
+    //调用
+    person.sayHi()
+
+    //对象复制
+    let person1 = {names:"秀云" , ages : 20}
+    let person3 = {name:"秀云2" , age : 22}
+    // console.log(person3)
+    let p1 = {...person1,...person3}
+    console.log(p1)
+
+    var f1 =  function(a){
+        return a+1
+    }
+    console.log(f1(2))
+
+    var f2 = a => a+1
+    console.log(f2(8))
+
+</script>

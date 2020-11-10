@@ -1,0 +1,32 @@
+<script>
+    let user = {"name" : "张三" , "age" : 20}
+    let name1 = user.name
+    let age1 = user.age
+    console.log(name1+"=="+age1)
+    let {name,age} = user
+    console.log(name,age)
+    let str = `hello ni`
+    console.log(str)
+    let str1 = `hello
+    nihao `
+    console.log(str1)
+    let str2 = `hello ${name1}
+    ,${age1+1}`
+    console.log(str2)
+
+    function f1(){
+        return "我是你爸爸"
+    }
+    let str3 = `hello,${f1()}`
+    console.log(str3)
+
+    const names = "秀云"
+    const ages = 20
+    
+    const p1 = {name : names,age : ages}
+    console.log(p1)
+
+    const p2 = {names,ages}
+    console.log(p2)
+
+</script>
